@@ -1,0 +1,358 @@
+/*
+
+DIGITAL TREND
+
+https://templatemo.com/tm-538-digital-trend
+
+*/
+  
+  @font-face {
+      font-family: 'Plain-Regular';
+      src: url('../fonts/Plain-Regular.woff2') format('woff2'),
+          url('../fonts/Plain-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Plain-Light';
+      src: url('../fonts/Plain-Light.woff2') format('woff2'),
+          url('../fonts/Plain-Light.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Plain-Bold';
+      src: url('../fonts/Plain-Bold.woff2') format('woff2'),
+          url('../fonts/Plain-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+
+  :root {
+    --primary-color:        #057a8d;
+    --secondary-color:      #212121;
+    --white-color:          #ffffff;
+    --dark-color:           #171819;
+    --project-bg:           #f0f8ff;
+    --menu-bg:              #0c8195;
+
+    --title-color:          #15141a;
+    --gray-color:           #909090;
+    --link-color:           #404040;
+    --p-color:              #666262;
+
+    --base-font-family:     'Plain-Light', sans-serif;
+    --title-font-family:    'Plain-Regular', sans-serif;
+    --font-bold-family:     'Plain-Bold', sans-serif;
+    --font-weight-bold:     bold;
+
+    --h1-font-size:         42px;
+    --h2-font-size:         32px;
+    --h3-font-size:         24px;
+    --p-font-size:          18px;
+    --base-font-size:       16px;
+    --menu-font-size:       14px;
+
+    --border-radius-large:  100px;
+    --border-radius-small:  5px;
+  }
+
+  body {
+    background: var(--white-color);
+    font-family: var(--base-font-family);
+  }
+
+
+  /*---------------------------------------
+     TYPOGRAPHY              
+  -----------------------------------------*/
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: var(--title-font-family);
+    line-height: inherit;
+  }
+
+  h1 {
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+  }
+
+  h2 {
+    font-size: var(--h2-font-size);
+    font-weight: 100;
+  }
+
+  h3 {
+    font-size: var(--h3-font-size);
+    font-weight: 100;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    color: var(--gray-color);
+    font-family: var(--base-font-family);
+    font-size: var(--p-font-size);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: var(--p-color);
+    font-size: var(--p-font-size);
+    line-height: 1.5em;
+  }
+
+  b, 
+  strong {
+    letter-spacing: 0;
+    color: var(--secondary-color);
+  }
+
+
+  .section-padding {
+    padding: 8em 0;
+  }
+
+
+  /*---------------------------------------
+      ABOUT            
+  -----------------------------------------*/
+
+  .about {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-image img {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+
+  /*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+  @media screen and (min-width: 1200px) {
+
+    .about-info h2 {
+      max-width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 991px) {
+
+    .project h2 {
+      max-width: 32%;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .hero {
+      padding-top: 14em;
+    }
+
+    .hero-text {
+      bottom: 2em;
+    }
+
+    .navbar {
+      padding: 1em;
+    }
+
+    .navbar-collapse {
+      text-align: center;
+      padding: 2.5em 0;
+    }
+
+    .nav-link {
+      display: inline-block;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link.contact {
+      margin: 1em 0;
+    }
+
+    .copyright-text, 
+    .footer-link, 
+    .site-footer .social-icon {
+      margin-top: 3em;
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .project-info {
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+
+    .footer-link, 
+    .site-footer .social-icon {
+      margin-top: 1em;
+    }
+
+    .copyright-text {
+      margin: 2.5em 0 1em 0;
+    }
+
+    .footer-link li {
+      margin-left: 0;
+    }
+  }
+  .item-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-list{
+    position: absolute;
+    top:22%;
+    margin:auto;
+  }
+  .image-list .col-md-12 img {
+    width:18%
+  }
+  .image-list .col-md-12 {
+    margin-bottom: 6%;
+  }
+  .image-list .col-md-12 img:first-child {
+    float:left;
+  }
+  .image-list .col-md-12 img:nth-child(1) {
+    float:left;
+  }
+  .image-list .col-md-12 img:nth-child(2) {
+    float:right;
+  }
+  .image-item {
+    display: flex; 
+  }
+  .row-item1 img:nth-child(1){
+    margin-left: 15%;
+  } 
+  .row-item1 img:nth-child(2){
+    margin-right: 15%;
+  } 
+
+  .row-item2 img:nth-child(1){
+    margin-left: 6%;
+  } 
+  .row-item2 img:nth-child(2){
+    margin-right: 6%;
+  } 
+
+  
+  .row-item3 img:nth-child(1){
+    margin-left: 4%;
+  } 
+  .row-item3 img:nth-child(2){
+    margin-right: 4%;
+  } 
+
+  .row-item4 img {
+    margin-left: 45%; 
+    width:10% !important;
+  }
+
+  .image-person {
+    margin-bottom: 20%;
+  }
+
+  
+  .image-list1{
+    position: absolute;
+    top:8%;
+    margin:auto;
+  }
+  
+  .image-list1 .col-md-12 img {
+    width:18%
+  }
+  .image-list1 .col-md-12 {
+    margin-bottom: 0%;
+  }
+  .image-list .col-md-12 img:first-child {
+    float:left;
+  }
+  .image-list1 .col-md-12 img:nth-child(1) {
+    float:left;
+  }
+  .image-list1 .col-md-12 img:nth-child(2) {
+    float:right;
+  }
+  .image-item1 {
+    display: flex; 
+  }
+  .row-item-end img:nth-child(1){
+    margin-left: 15%;
+  } 
+  .row-item-end img:nth-child(2){
+    margin-right: 15%;
+  } 
+
+  .image-list {
+    min-width:1170px;
+  }
+  #leaf img {
+    width:100%;
+  }
+  .leaf-title {
+    margin-top:50px;
+  }
+  @media screen and (min-width: 576px) {    
+    .container {
+      min-width: 960px;
+    }
+  }
+  @media screen and (max-width: 576px) {        
+    #leaf img {
+      width:45%;
+      display: inline-block;
+    }
+    .leaf-title {
+        margin-top: 0px;
+    }
+    .image-list {
+      min-width:100%;
+    }
+    .image-list .col-md-12 img{
+      width:30%;
+    }
+    .image-list .col-md-12 {
+        margin-bottom: 9%;
+    }
+    .image-list {
+      top: 18%;
+    }
+    .image-person {
+        margin-bottom: 30%;
+    }
+    .row-item4 img {
+      width:20% !important;
+      margin-left: 40%;
+    }
+    /* #leaf1 {
+      src:
+    } */    
+  }
